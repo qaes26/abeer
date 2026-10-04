@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+<title>Tribute of Honor – Mrs. Abeer Ayoub | World Teachers' Day</title>
+<meta name="description" content="A cinematic luxury mobile tribute and card honoring Teacher Abeer Ayoub from student Ghalib Al-Jazi on World Teachers' Day."/>
+
+<!-- Google Fonts: Optimized weights for fast mobile loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet"/>
+
+<style>
+/* ========================================================
+   LUXURY RUBY-HEART & ROSE-GOLD MOBILE DESIGN SYSTEM
+   ======================================================== */
+:root {
+  --bg-deep: #080308;
+  --bg-card: #120710;
+  --ruby-primary: #ff2d60;
+  --ruby-glow: rgba(255, 45, 96, 0.45);
+  --rose-light: #ffd4e5;
+  --rose-gold: #ffbe98;
+  --gold-accent: #f8d77e;
+  --text-white: #ffffff;
+  --text-subtle: #eed6e2;
+  
+  --ruby-gradient: linear-gradient(135deg, #ff85a1 0%, #ff2d60 45%, #c70039 100%);
+  --rose-gold-gradient: linear-gradient(135deg, #fff0e6 0%, #ffd0b5 30%, #e89882 70%, #fff5ee 100%);
+  --heart-gradient: linear-gradient(135deg, #ff6584 0%, #ff2d60 50%, #900c3f 100%);
+  
+  --border-glow: rgba(255, 75, 120, 0.35);
+  --border-gold: rgba(248, 215, 126, 0.35);
+
+  --font-title: 'Cinzel', serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-ui: 'Plus Jakarta Sans', sans-serif;
+  --font-script: 'Great Vibes', cursive;
+}
+
+*, *::before, *::after {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--bg-deep);
+  color: var(--text-white);
+  font-family: var(--font-ui);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 50% 18%, #260a1c 0%, #11040e 55%, #050104 100%);
+}
+
+/* Dedicated Mobile Container (Zero Layout Shift) */
+.mobile-wrapper {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 50px rgba(255, 45, 96, 0.15), 0 0 30px rgba(0,0,0,0.9);
+  background: transparent;
+}
+
+/* Single Lightweight Celebration Canvas (Idle CPU = 0%) */
+#celebration-canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 40;
+}
+
+/* Ambient Heart Glow (Pure CSS GPU layer, zero filter lag) */
+.ambient-glow {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(255, 45, 96, 0.16) 0%, rgba(248, 215, 126, 0.05) 45%, transparent 70%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ========================================================
+   STAGE 0: CINEMATIC RETRO-TV VIDEO BROADCAST
+   ======================================================== */
+.tv-screen-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 70;
+  background: radial-gradient(circle at 50% 30%, #220819 0%, #10040d 60%, #050104 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 16px 24px 16px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tv-screen-stage.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+
+.tv-stage-header {
+  text-align: center;
+  width: 100%;
+}
+
+.tv-channel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 45, 96, 0.12);
+  border: 1px solid var(--border-glow);
+  padding: 5px 16px;
+  border-radius: 20px;
+  color: var(--rose-light);
+  font-family: var(--font-ui);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.live-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff2d60;
+  box-shadow: 0 0 10px #ff2d60;
+  animation: heartPulse 1.2s infinite alternate;
+}
+
+@keyframes heartPulse {
+  0% { transform: scale(0.85); opacity: 0.5; }
+  100% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 14px #ff2d60; }
+}
+
+.tv-stage-title {
+  font-family: var(--font-title);
+  font-size: clamp(15px, 4vw, 19px);
+  color: #ffffff;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 10px rgba(255, 45, 96, 0.4);
+}
+
+/* The TV Apparatus */
+.tv-apparatus {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cute Antennas */
+.tv-antennas {
+  position: relative;
+  width: 110px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -4px;
+  z-index: 1;
+}
+
+.antenna-rod {
+  width: 3px;
+  height: 32px;
+  background: linear-gradient(180deg, #ffd4e5, #ff6584, #440b20);
+  border-radius: 3px;
+  position: relative;
+}
+.antenna-rod.left { transform: rotate(-28deg); transform-origin: bottom center; margin-right: 12px; }
+.antenna-rod.right { transform: rotate(28deg); transform-origin: bottom center; margin-left: 12px; }
+
+.antenna-rod::before {
+  content: '♥';
+  position: absolute;
+  top: -8px; left: -5.5px;
+  font-size: 11px;
+  color: var(--ruby-primary);
+  filter: drop-shadow(0 0 4px var(--ruby-primary));
+}
+
+/* TV Cabinet */
+.tv-cabinet {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(145deg, #2b0f20 0%, #1a0813 50%, #0d0309 100%);
+  border: 7px solid #14050f;
+  border-radius: 22px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.85), inset 0 0 0 1.5px rgba(255, 75, 120, 0.4);
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+/* TV Bezel & Screen (Full face completely visible) */
+.tv-screen-wrapper {
+  flex: 1;
+  position: relative;
+  background: #000000;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid #080206;
+  height: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tv-video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  background: #000;
+  border-radius: 10px;
+}
+
+.tv-glass-glare {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.02) 40%, transparent 60%);
+  pointer-events: none;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+/* Play Overlay */
+.tv-play-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 2, 6, 0.55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.25s ease;
+}
+
+.tv-play-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+
+.tv-play-disc {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--ruby-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(255, 45, 96, 0.65);
+  transition: transform 0.2s ease;
+}
+
+.tv-play-overlay:active .tv-play-disc {
+  transform: scale(0.92);
+}
+
+.tv-play-disc svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 3px;
+}
+
+.tv-play-label {
+  font-family: var(--font-ui);
+  font-size: 13.5px;
+  color: #ffffff;
+  text-shadow: 0 0 10px var(--ruby-primary);
+  font-weight: 700;
+}
+
+/* TV Side Panel */
+.tv-side-panel {
+  width: 44px;
+  background: linear-gradient(180deg, #220818 0%, #0f030a 100%);
+  border: 1px solid rgba(255, 75, 120, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 3px;
+}
+
+.tv-knob {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #591636, #2d0719 70%, #15020a 100%);
+  border: 1.5px solid var(--ruby-primary);
+  cursor: pointer;
+}
+
+.tv-speaker-slots {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5px;
+  width: 22px;
+}
+.tv-slot-line {
+  height: 2px;
+  background: rgba(255, 75, 120, 0.35);
+  border-radius: 2px;
+}
+
+.tv-led-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ff2d60;
+  box-shadow: 0 0 8px #ff2d60;
+}
+
+/* TV Feet */
+.tv-stand-feet {
+  width: 75%;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tv-foot {
+  width: 26px;
+  height: 10px;
+  background: linear-gradient(180deg, #ff6584, #440b20);
+  border-radius: 0 0 6px 6px;
+}
+
+/* Bottom Action */
+.tv-stage-footer {
+  width: 100%;
+}
+
+.tv-continue-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--ruby-gradient);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 22px rgba(255, 45, 96, 0.45);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tv-continue-btn:active {
+  transform: scale(0.97);
+}
+
+/* ========================================================
+   STAGE 1: TYPEWRITER HEART PROLOGUE
+   ======================================================== */
+.intro-screen {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  background: radial-gradient(circle at 50% 35%, #200818 0%, #11040d 65%, #050104 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 18px 28px 18px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.intro-screen.fade-out {
+  opacity: 0;
+  transform: scale(0.96);
+  pointer-events: none;
+}
+
+.intro-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mini-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  background: rgba(255, 45, 96, 0.12);
+  border: 1px solid var(--border-glow);
+  border-radius: 20px;
+  font-size: 11.5px;
+  color: var(--rose-light);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.skip-text-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  font-size: 13px;
+  font-family: var(--font-ui);
+  cursor: pointer;
+  padding: 4px 8px;
+  font-weight: 600;
+}
+
+.intro-body {
+  margin: auto 0;
+  background: rgba(24, 8, 18, 0.85);
+  border: 1.5px solid var(--border-glow);
+  border-radius: 20px;
+  padding: 24px 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 0 20px rgba(255, 45, 96, 0.08);
+}
+
+.heart-quill-icon {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 14px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ruby-primary);
+  filter: drop-shadow(0 0 10px rgba(255, 45, 96, 0.7));
+}
+
+.typewriter-content {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 1.75;
+  color: #ffffff;
+  text-align: center;
+  min-height: 140px;
+  word-break: break-word;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  color: var(--ruby-primary);
+  font-weight: bold;
+  animation: cursorBlink 0.6s infinite alternate;
+}
+
+@keyframes cursorBlink {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.open-card-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--ruby-gradient);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 22px rgba(255, 45, 96, 0.45);
+  transition: transform 0.15s ease;
+}
+
+.open-card-btn:active {
+  transform: scale(0.97);
+}
+
+/* ========================================================
+   STAGE 2: THE LEGENDARY MOBILE CARD SCREEN
+   ======================================================== */
+.card-screen {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 100vh;
+  padding: 16px 14px 22px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Top App Bar */
+.mobile-appbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.app-title-pill {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(28, 9, 21, 0.9);
+  border: 1px solid var(--border-glow);
+  border-radius: 20px;
+  padding: 5px 14px;
+}
+
+.app-title-pill span {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--rose-light);
+  letter-spacing: 0.3px;
+}
+
+.app-title-pill .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ruby-primary);
+  box-shadow: 0 0 6px var(--ruby-primary);
+}
+
+.appbar-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.circle-icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(28, 9, 21, 0.9);
+  border: 1px solid var(--border-glow);
+  color: var(--rose-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.circle-icon-btn:active {
+  transform: scale(0.92);
+  background: rgba(255, 45, 96, 0.2);
+}
+
+/* ========================================================
+   THE MASTERPIECE MOBILE CARD (Hearts & Rose Gold)
+   ======================================================== */
+.mobile-card-container {
+  width: 100%;
+  background: linear-gradient(165deg, #1c0a17 0%, #12040e 55%, #090207 100%);
+  border: 1.5px solid var(--border-glow);
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.85), inset 0 0 25px rgba(255, 45, 96, 0.1);
+  padding: 22px 16px;
+  position: relative;
+}
+
+/* Delicate Heart Corners */
+.card-heart-corner {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  opacity: 0.75;
+  color: var(--ruby-primary);
+}
+.card-heart-corner.tl { top: 9px; left: 9px; }
+.card-heart-corner.tr { top: 9px; right: 9px; }
+.card-heart-corner.bl { bottom: 9px; left: 9px; }
+.card-heart-corner.br { bottom: 9px; right: 9px; }
+
+/* Crown & Heart Emblem */
+.card-emblem {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.emblem-svg-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 45, 96, 0.25) 0%, transparent 70%);
+  margin-bottom: 2px;
+}
+
+.emblem-heart-svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--ruby-primary);
+  filter: drop-shadow(0 0 10px rgba(255, 45, 96, 0.8));
+}
+
+.card-occasion-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: var(--rose-light);
+  background: rgba(255, 45, 96, 0.14);
+  padding: 4px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 75, 120, 0.4);
+  text-transform: uppercase;
+}
+
+/* Card Main Title */
+.card-main-title {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 22px;
+  text-align: center;
+  background: var(--rose-gold-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 6px;
+  letter-spacing: 0.8px;
+  text-shadow: 0 2px 15px rgba(255, 45, 96, 0.4);
+}
+
+/* Teacher Dedication Plaque */
+.teacher-plaque {
+  background: radial-gradient(ellipse at center, #260c1d 0%, #150510 100%);
+  border: 1.5px solid rgba(255, 75, 120, 0.4);
+  border-radius: 18px;
+  padding: 16px 12px;
+  text-align: center;
+  margin: 12px 0;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.6), 0 4px 15px rgba(255, 45, 96, 0.15);
+}
+
+.teacher-pretitle {
+  font-size: 11.5px;
+  color: var(--rose-gold);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.teacher-fullname {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 1.25;
+  color: #ffffff;
+  margin: 4px 0;
+}
+
+.teacher-fullname .teacher-name-glow {
+  color: #ffe0eb;
+  background: linear-gradient(135deg, #ffffff 0%, #ffc2d4 50%, #ff85a1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 14px rgba(255, 45, 96, 0.6));
+}
+
+.teacher-subtitle {
+  font-size: 12px;
+  color: var(--gold-accent);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Heartfelt Message */
+.card-message {
+  font-family: var(--font-serif);
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.card-message strong {
+  color: var(--rose-light);
+  font-weight: 700;
+}
+
+/* Poetic Banner with Glowing Hearts */
+.poem-banner {
+  background: rgba(16, 4, 13, 0.9);
+  border-right: 3px solid var(--ruby-primary);
+  border-left: 3px solid var(--ruby-primary);
+  border-radius: 12px;
+  padding: 10px 12px;
+  text-align: center;
+  margin: 12px 0;
+  box-shadow: inset 0 0 10px rgba(255, 45, 96, 0.15);
+}
+
+.poem-verse {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--rose-light);
+  line-height: 1.5;
+}
+
+/* Signature Section */
+.card-signature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 75, 120, 0.25);
+  margin-top: 6px;
+}
+
+.designer-info {
+  text-align: left;
+}
+
+.designer-label {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.designer-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--rose-gold);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.seal-pill {
+  background: rgba(255, 45, 96, 0.14);
+  border: 1px solid rgba(255, 75, 120, 0.4);
+  border-radius: 16px;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10.5px;
+  color: var(--rose-light);
+  font-weight: 700;
+}
+
+/* ========================================================
+   INTERACTIVE BUTTONS GRID
+   ======================================================== */
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 12px 0 8px 0;
+}
+
+.action-card-btn {
+  background: rgba(28, 9, 21, 0.9);
+  border: 1px solid var(--border-glow);
+  border-radius: 16px;
+  padding: 10px 4px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.action-card-btn:active {
+  transform: scale(0.95);
+  background: rgba(255, 45, 96, 0.22);
+}
+
+.action-card-btn .emoji-icon {
+  font-size: 20px;
+}
+
+.action-card-btn span {
+  font-size: 11.5px;
+  color: var(--rose-light);
+  font-weight: 700;
+}
+
+/* Main Celebrate Button */
+.main-celebrate-btn {
+  width: 100%;
+  padding: 13.5px;
+  background: var(--ruby-gradient);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: var(--font-ui);
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 22px rgba(255, 45, 96, 0.45);
+  transition: transform 0.15s ease;
+}
+
+.main-celebrate-btn:active {
+  transform: scale(0.97);
+}
+
+/* ========================================================
+   BOTTOM SHEET FOR DEDICATIONS
+   ======================================================== */
+.bottom-sheet {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 100;
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.bottom-sheet.open {
+  display: flex;
+}
+
+.sheet-content {
+  width: 100%;
+  max-width: 430px;
+  background: #160613;
+  border-top: 2px solid var(--ruby-primary);
+  border-radius: 22px 22px 0 0;
+  padding: 18px 16px 26px 16px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sheet-handle {
+  width: 38px;
+  height: 4px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 2px;
+  margin: 0 auto 12px auto;
+}
+
+.sheet-title {
+  font-family: var(--font-title);
+  font-size: 17px;
+  color: var(--rose-light);
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.sheet-scroll-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.sheet-item {
+  background: rgba(30, 9, 23, 0.85);
+  border: 1px solid rgba(255, 75, 120, 0.3);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.sheet-item-author {
+  font-size: 12px;
+  color: var(--ruby-primary);
+  font-weight: 700;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sheet-item-text {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #fff;
+  font-family: var(--font-serif);
+}
+
+.sheet-input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.sheet-input {
+  flex: 1;
+  background: rgba(10, 3, 8, 0.95);
+  border: 1px solid var(--border-glow);
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: #fff;
+  font-size: 13px;
+  font-family: var(--font-ui);
+  outline: none;
+}
+
+.sheet-input:focus {
+  border-color: var(--ruby-primary);
+}
+
+.sheet-submit-btn {
+  background: var(--ruby-gradient);
+  border: none;
+  border-radius: 12px;
+  padding: 0 18px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+
+.sheet-close-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 8px;
+  color: #bbb;
+  font-size: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Floating Toast */
+.mobile-toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: rgba(22, 6, 17, 0.95);
+  border: 1px solid var(--ruby-primary);
+  border-radius: 25px;
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  white-space: nowrap;
+  box-shadow: 0 8px 25px rgba(255, 45, 96, 0.4);
+}
+.mobile-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+</style>
+</head>
+<body>
+
+<div class="mobile-wrapper">
+
+  <!-- Lightweight Celebration Canvas (Sleeps at 0% CPU when inactive) -->
+  <canvas id="celebration-canvas"></canvas>
+  <div class="ambient-glow"></div>
+
+  <!-- ========================================================
+       STAGE 0: CINEMATIC RETRO-TV VIDEO BROADCAST
+       ======================================================== -->
+  <section class="tv-screen-stage" id="tv-screen-stage">
+    <div class="tv-stage-header">
+      <div class="tv-channel-badge">
+        <span class="live-indicator"></span>
+        <span>Live Tribute • Special Broadcast</span>
+      </div>
+      <h2 class="tv-stage-title">A Message of Gratitude for Mrs. Abeer Ayoub</h2>
+    </div>
+
+    <!-- The TV Apparatus -->
+    <div class="tv-apparatus">
+      <div class="tv-antennas">
+        <div class="antenna-rod left"></div>
+        <div class="antenna-rod right"></div>
+      </div>
+
+      <div class="tv-cabinet">
+        <div class="tv-screen-wrapper">
+          <video class="tv-video-element" id="tv-video" playsinline controls preload="metadata">
+            <source src="gemini_generated_video_6520ed37.mp4" type="video/mp4"/>
+            Your browser does not support video playback.
+          </video>
+          <div class="tv-glass-glare"></div>
+
+          <!-- Play Overlay -->
+          <div class="tv-play-overlay" id="tv-play-overlay">
+            <div class="tv-play-disc">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <div class="tv-play-label">Tap to Watch Video 💖</div>
+          </div>
+        </div>
+
+        <div class="tv-side-panel">
+          <div class="tv-led-indicator"></div>
+          <div class="tv-knob" id="tv-knob-ch"></div>
+          <div class="tv-knob" id="tv-knob-vol"></div>
+          <div class="tv-speaker-slots">
+            <div class="tv-slot-line"></div>
+            <div class="tv-slot-line"></div>
+            <div class="tv-slot-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tv-stand-feet">
+        <div class="tv-foot"></div>
+        <div class="tv-foot"></div>
+      </div>
+    </div>
+
+    <div class="tv-stage-footer">
+      <button class="tv-continue-btn" id="btn-from-tv-to-intro">
+        <span>Continue to Tribute Card</span>
+        <span>✨ 💖</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       STAGE 1: TYPEWRITER HEART PROLOGUE
+       ======================================================== -->
+  <div class="intro-screen" id="intro-screen">
+    <div class="intro-header">
+      <div class="mini-badge">
+        <span>♥</span> World Teachers' Day
+      </div>
+      <button class="skip-text-btn" id="btn-skip-intro">Skip ⏭️</button>
+    </div>
+
+    <div class="intro-body">
+      <div class="heart-quill-icon">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </div>
+      <div class="typewriter-content" id="typewriter-content"></div>
+    </div>
+
+    <div class="intro-footer">
+      <button class="open-card-btn" id="btn-open-card">
+        <span>Unveil Royal Tribute Card</span>
+        <span>💖 ✨</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       STAGE 2: THE MOBILE CARD SCREEN
+       ======================================================== -->
+  <div class="card-screen" id="card-screen">
+    
+    <!-- Top Mobile Header -->
+    <div class="mobile-appbar">
+      <div class="app-title-pill">
+        <div class="dot"></div>
+        <span>Sanctuary of Gratitude</span>
+      </div>
+
+      <div class="appbar-actions">
+        <button class="circle-icon-btn" id="btn-rewatch-tv" title="Watch Video">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+            <polyline points="17 2 12 7 7 2"></polyline>
+          </svg>
+        </button>
+        <button class="circle-icon-btn" id="btn-audio" title="Toggle Sound">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+        <button class="circle-icon-btn" id="btn-replay" title="Replay Intro">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M1 4v6h6M23 20v-6h-6"/>
+            <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- The Vertical Mobile Card -->
+    <div class="mobile-card-container" id="mobile-card">
+      <!-- Heart Corner Accents -->
+      <svg class="card-heart-corner tl" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      <svg class="card-heart-corner tr" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      <svg class="card-heart-corner bl" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      <svg class="card-heart-corner br" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+
+      <!-- Crown & Heart Occasion -->
+      <div class="card-emblem">
+        <div class="emblem-svg-wrap">
+          <svg class="emblem-heart-svg" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="card-occasion-tag">💖 World Teachers' Day Tribute 💖</span>
+        </div>
+      </div>
+
+      <!-- Title -->
+      <h1 class="card-main-title">Tribute of Eternal Gratitude</h1>
+
+      <!-- Teacher Frame Plaque -->
+      <div class="teacher-plaque">
+        <div class="teacher-pretitle">Honoring Our Beloved & Cherished Educator</div>
+        <div class="teacher-fullname">
+          <span class="teacher-name-glow">Mrs. Abeer Ayoub</span>
+        </div>
+        <div class="teacher-subtitle">A Beacon of Wisdom • Inspiring Minds & Touching Hearts</div>
+      </div>
+
+      <!-- Message -->
+      <p class="card-message">
+        To the educator who illuminated our path with unwavering kindness and knowledge.<br/>
+        <strong>Thank you for inspiring us</strong> to reach beyond the stars and shape the world with compassion and integrity.
+      </p>
+
+      <!-- Poetic Banner -->
+      <div class="poem-banner">
+        <div class="poem-verse">« A truly great teacher touches a heart and changes a life forever. »</div>
+      </div>
+
+      <!-- Signature -->
+      <div class="card-signature">
+        <div class="designer-info">
+          <div class="designer-label">Dedicated with profound respect</div>
+          <div class="designer-name">
+            <span>Student:</span> Ghalib Al-Jazi 💖
+          </div>
+        </div>
+
+        <div class="seal-pill">
+          <span>★ Medal of Honor 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Actions Grid -->
+    <div class="action-grid">
+      <button class="action-card-btn" id="btn-roses">
+        <span class="emoji-icon">💖</span>
+        <span>Send Hearts</span>
+      </button>
+      <button class="action-card-btn" id="btn-messages">
+        <span class="emoji-icon">📜</span>
+        <span>Guestbook</span>
+      </button>
+      <button class="action-card-btn" id="btn-save-img">
+        <span class="emoji-icon">📥</span>
+        <span>Save Card</span>
+      </button>
+    </div>
+
+    <!-- Grand Celebration Button -->
+    <button class="main-celebrate-btn" id="btn-celebrate">
+      <span>🎉 Celebrate Mrs. Abeer Ayoub</span>
+      <span>✨ 💖</span>
+    </button>
+
+  </div>
+
+</div>
+
+<!-- Bottom Sheet for Dedications -->
+<div class="bottom-sheet" id="bottom-sheet">
+  <div class="sheet-content">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Guestbook for Mrs. Abeer Ayoub</div>
+
+    <div class="sheet-scroll-list" id="sheet-list">
+      <div class="sheet-item">
+        <div class="sheet-item-author">♥ Student Ghalib Al-Jazi</div>
+        <div class="sheet-item-text">"Thank you, Mrs. Abeer, for your boundless kindness and for instilling in us the courage to dream and achieve."</div>
+      </div>
+      <div class="sheet-item">
+        <div class="sheet-item-author">♥ Heartfelt Blessing</div>
+        <div class="sheet-item-text">"May your life be filled with happiness and joy, just as you filled our classrooms with light and wisdom."</div>
+      </div>
+    </div>
+
+    <div class="sheet-input-row">
+      <input type="text" class="sheet-input" id="dedication-input" placeholder="Write a note of gratitude..."/>
+      <button class="sheet-submit-btn" id="btn-sheet-submit">Send</button>
+    </div>
+
+    <button class="sheet-close-btn" id="btn-close-sheet">Close Window ✕</button>
+  </div>
+</div>
+
+<!-- Toast Notice -->
+<div class="mobile-toast" id="mobile-toast">
+  <span id="toast-text">Operation completed successfully!</span>
+</div>
+
+<!-- ========================================================
+     JAVASCRIPT: ULTRA-LIGHTWEIGHT EVENT-DRIVEN FX
+     ======================================================== -->
+<script>
+(function() {
+  'use strict';
+
+  // --- AUDIO SYNTHESIZER (Web Audio API on demand) ---
+  class SoundEngine {
+    constructor() {
+      this.ctx = null;
+      this.isMuted = false;
+    }
+    init() {
+      if (!this.ctx) {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        this.ctx = new AudioCtx();
+      }
+      if (this.ctx && this.ctx.state === 'suspended') {
+        this.ctx.resume();
+      }
+    }
+    playKeyClick() {
+      if (this.isMuted) return;
+      this.init();
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(Math.random() * 80 + 720, this.ctx.currentTime);
+      gain.gain.setValueAtTime(0.02, this.ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.0001, this.ctx.currentTime + 0.03);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      osc.start();
+      osc.stop(this.ctx.currentTime + 0.03);
+    }
+    playChime(freq = 523.25) {
+      if (this.isMuted) return;
+      this.init();
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(freq, this.ctx.currentTime);
+      gain.gain.setValueAtTime(0.08, this.ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.0001, this.ctx.currentTime + 0.8);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      osc.start();
+      osc.stop(this.ctx.currentTime + 0.8);
+    }
+    playArpeggio() {
+      if (this.isMuted) return;
+      [523.25, 659.25, 783.99, 1046.50].forEach((f, i) => setTimeout(() => this.playChime(f), i * 85));
+    }
+    playBoom() {
+      if (this.isMuted) return;
+      this.init();
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(130, this.ctx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(35, this.ctx.currentTime + 0.5);
+      gain.gain.setValueAtTime(0.18, this.ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.5);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      osc.start();
+      osc.stop(this.ctx.currentTime + 0.5);
+    }
+  }
+
+  const audio = new SoundEngine();
+
+  // --- TV STAGE MANAGEMENT ---
+  const tvStage = document.getElementById('tv-screen-stage');
+  const tvVideo = document.getElementById('tv-video');
+  const tvPlayOverlay = document.getElementById('tv-play-overlay');
+  const btnFromTvToIntro = document.getElementById('btn-from-tv-to-intro');
+  const btnRewatchTv = document.getElementById('btn-rewatch-tv');
+
+  tvPlayOverlay.addEventListener('click', () => {
+    tvPlayOverlay.classList.add('hidden');
+    tvVideo.play().catch(e => console.log(e));
+  });
+
+  tvVideo.addEventListener('play', () => tvPlayOverlay.classList.add('hidden'));
+  tvVideo.addEventListener('pause', () => {
+    if (!tvVideo.ended) tvPlayOverlay.classList.remove('hidden');
+  });
+
+  tvVideo.addEventListener('ended', () => {
+    showToast('✨ Video completed. Moving to tribute card...');
+    setTimeout(transitionFromTvToIntro, 1000);
+  });
+
+  function transitionFromTvToIntro() {
+    tvVideo.pause();
+    tvStage.classList.add('fade-out');
+    audio.playArpeggio();
+    startTyping();
+  }
+
+  btnFromTvToIntro.addEventListener('click', transitionFromTvToIntro);
+
+  btnRewatchTv.addEventListener('click', () => {
+    tvStage.classList.remove('fade-out');
+    introScreen.classList.remove('fade-out');
+    tvVideo.currentTime = 0;
+    tvPlayOverlay.classList.remove('hidden');
+  });
+
+  // --- TYPEWRITER INTRO (ENGLISH) ---
+  const typewriterContent = document.getElementById('typewriter-content');
+  const btnOpenCard = document.getElementById('btn-open-card');
+  const btnSkipIntro = document.getElementById('btn-skip-intro');
+  const introScreen = document.getElementById('intro-screen');
+
+  const textLines = [
+    "To the extraordinary teacher who touches hearts and shapes minds...",
+    "Your kindness inspires greatness and ignites lifelong curiosity.",
+    "Dedicated with profound admiration to:",
+    "Mrs. Abeer Ayoub",
+    "Forever grateful — Your student, Ghalib Al-Jazi 💖✨"
+  ];
+  const fullText = textLines.join("\n\n");
+
+  let charIdx = 0;
+  let typeTimer = null;
+
+  function startTyping() {
+    charIdx = 0;
+    typewriterContent.innerHTML = '';
+    clearInterval(typeTimer);
+    typeTimer = setInterval(() => {
+      if (charIdx < fullText.length) {
+        typewriterContent.innerHTML = fullText.substring(0, charIdx + 1) + '<span class="typewriter-cursor">|</span>';
+        const char = fullText.charAt(charIdx);
+        if (char !== ' ' && char !== "\n") audio.playKeyClick();
+        charIdx++;
+      } else {
+        clearInterval(typeTimer);
+        typewriterContent.innerHTML = fullText;
+        audio.playChime(659.25);
+      }
+    }, 32);
+  }
+
+  function finishTypingInstantly() {
+    clearInterval(typeTimer);
+    typewriterContent.innerHTML = fullText;
+  }
+
+  function revealCard() {
+    audio.playArpeggio();
+    introScreen.classList.add('fade-out');
+    launchCelebrationBurst();
+    showToast('💖 Welcome to the Tribute of Honor');
+  }
+
+  btnOpenCard.addEventListener('click', revealCard);
+  btnSkipIntro.addEventListener('click', () => {
+    if (charIdx < fullText.length) finishTypingInstantly();
+    else revealCard();
+  });
+
+  document.getElementById('btn-replay').addEventListener('click', () => {
+    introScreen.classList.remove('fade-out');
+    startTyping();
+  });
+
+  // --- CELEBRATION CANVAS: HEARTS & FIREWORKS (ZERO IDLE CPU) ---
+  const celCanvas = document.getElementById('celebration-canvas');
+  const celCtx = celCanvas.getContext('2d');
+  let fireworks = [];
+  let floatingHearts = [];
+  let animId = null;
+
+  function resizeCel() {
+    celCanvas.width = window.innerWidth;
+    celCanvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resizeCel, { passive: true });
+  resizeCel();
+
+  // Helper to draw a heart
+  function drawHeartPath(ctx, x, y, size) {
+    ctx.beginPath();
+    const topCurveHeight = size * 0.3;
+    ctx.moveTo(x, y + topCurveHeight);
+    ctx.bezierCurveTo(x, y, x - size / 2, y, x - size / 2, y + topCurveHeight);
+    ctx.bezierCurveTo(x - size / 2, y + (size + topCurveHeight) / 2, x, y + (size + topCurveHeight) / 1.4, x, y + size);
+    ctx.bezierCurveTo(x, y + (size + topCurveHeight) / 1.4, x + size / 2, y + (size + topCurveHeight) / 2, x + size / 2, y + topCurveHeight);
+    ctx.bezierCurveTo(x + size / 2, y, x, y, x, y + topCurveHeight);
+    ctx.closePath();
+  }
+
+  class FireworkSpark {
+    constructor(x, y, color) {
+      this.x = x; this.y = y;
+      const angle = Math.random() * Math.PI * 2;
+      const speed = Math.random() * 5 + 1.5;
+      this.vx = Math.cos(angle) * speed;
+      this.vy = Math.sin(angle) * speed;
+      this.gravity = 0.12;
+      this.friction = 0.96;
+      this.life = 1;
+      this.color = color;
+      this.size = Math.random() * 2.5 + 1.2;
+    }
+    update() {
+      this.vx *= this.friction;
+      this.vy *= this.friction;
+      this.vy += this.gravity;
+      this.x += this.vx;
+      this.y += this.vy;
+      this.life -= 0.025;
+    }
+    draw() {
+      if (this.size <= 0 || this.life <= 0) return;
+      celCtx.beginPath();
+      celCtx.arc(this.x, this.y, Math.max(0.1, this.size), 0, Math.PI * 2);
+      celCtx.fillStyle = this.color;
+      celCtx.globalAlpha = Math.max(0, Math.min(1, this.life));
+      celCtx.fill();
+    }
+  }
+
+  class FloatingHeart {
+    constructor(startX = null) {
+      this.x = startX !== null ? startX : Math.random() * celCanvas.width;
+      this.y = celCanvas.height + 20;
+      this.size = Math.random() * 14 + 10;
+      this.vy = -(Math.random() * 2.2 + 1.5);
+      this.vx = (Math.random() - 0.5) * 1.5;
+      this.rotation = (Math.random() - 0.5) * 0.4;
+      this.life = 1;
+      const palette = ['#ff2d60', '#ff6584', '#ff8da1', '#ffd0b5', '#ffffff'];
+      this.color = palette[Math.floor(Math.random() * palette.length)];
+    }
+    update() {
+      this.y += this.vy;
+      this.x += this.vx + Math.sin(this.y * 0.02) * 0.5;
+      if (this.y < celCanvas.height * 0.4) {
+        this.life -= 0.02;
+      }
+    }
+    draw() {
+      if (this.life <= 0) return;
+      celCtx.save();
+      celCtx.translate(this.x, this.y);
+      celCtx.rotate(this.rotation);
+      celCtx.fillStyle = this.color;
+      celCtx.globalAlpha = Math.max(0, Math.min(1, this.life));
+      drawHeartPath(celCtx, 0, -this.size / 2, this.size);
+      celCtx.fill();
+      celCtx.restore();
+    }
+  }
+
+  function renderCelebration() {
+    celCtx.clearRect(0, 0, celCanvas.width, celCanvas.height);
+
+    for (let i = fireworks.length - 1; i >= 0; i--) {
+      const f = fireworks[i];
+      f.update();
+      f.draw();
+      if (f.life <= 0) fireworks.splice(i, 1);
+    }
+
+    for (let i = floatingHearts.length - 1; i >= 0; i--) {
+      const h = floatingHearts[i];
+      h.update();
+      h.draw();
+      if (h.life <= 0 || h.y < -30) floatingHearts.splice(i, 1);
+    }
+
+    celCtx.globalAlpha = 1;
+
+    // Zero idle CPU: stops animation loop when clean
+    if (fireworks.length > 0 || floatingHearts.length > 0) {
+      animId = requestAnimationFrame(renderCelebration);
+    } else {
+      celCtx.clearRect(0, 0, celCanvas.width, celCanvas.height);
+      animId = null;
+    }
+  }
+
+  function startAnimationLoop() {
+    if (!animId) animId = requestAnimationFrame(renderCelebration);
+  }
+
+  function launchCelebrationBurst() {
+    audio.playBoom();
+    const colors = ['#ff2d60', '#ff85a1', '#ffd4e5', '#ffd0b5', '#ffffff'];
+    for (let b = 0; b < 3; b++) {
+      setTimeout(() => {
+        const bx = Math.random() * (celCanvas.width * 0.7) + celCanvas.width * 0.15;
+        const by = Math.random() * (celCanvas.height * 0.35) + celCanvas.height * 0.2;
+        const col = colors[Math.floor(Math.random() * colors.length)];
+        for (let i = 0; i < 35; i++) fireworks.push(new FireworkSpark(bx, by, col));
+        startAnimationLoop();
+      }, b * 180);
+    }
+    for (let i = 0; i < 22; i++) {
+      setTimeout(() => {
+        floatingHearts.push(new FloatingHeart());
+        startAnimationLoop();
+      }, i * 50);
+    }
+  }
+
+  // --- BUTTON ACTIONS ---
+  document.getElementById('btn-celebrate').addEventListener('click', () => {
+    launchCelebrationBurst();
+    showToast('🎉 In Celebration of Mrs. Abeer Ayoub! 💖');
+  });
+
+  document.getElementById('btn-roses').addEventListener('click', () => {
+    audio.playChime(659.25);
+    for (let i = 0; i < 25; i++) {
+      setTimeout(() => {
+        floatingHearts.push(new FloatingHeart());
+        startAnimationLoop();
+      }, i * 45);
+    }
+    showToast('💖 Overflowing Hearts for Mrs. Abeer');
+  });
+
+  const btnAudio = document.getElementById('btn-audio');
+  btnAudio.addEventListener('click', () => {
+    audio.init();
+    audio.isMuted = !audio.isMuted;
+    btnAudio.style.opacity = audio.isMuted ? '0.5' : '1';
+    showToast(audio.isMuted ? '🔇 Audio muted' : '🎵 Audio enabled');
+  });
+
+  // Dedication Sheet
+  const bottomSheet = document.getElementById('bottom-sheet');
+  const btnMessages = document.getElementById('btn-messages');
+  const btnCloseSheet = document.getElementById('btn-close-sheet');
+  const sheetList = document.getElementById('sheet-list');
+  const dedicationInput = document.getElementById('dedication-input');
+  const btnSheetSubmit = document.getElementById('btn-sheet-submit');
+
+  btnMessages.addEventListener('click', () => {
+    audio.playChime(587.33);
+    bottomSheet.classList.add('open');
+  });
+
+  btnCloseSheet.addEventListener('click', () => bottomSheet.classList.remove('open'));
+  bottomSheet.addEventListener('click', (e) => {
+    if (e.target === bottomSheet) bottomSheet.classList.remove('open');
+  });
+
+  btnSheetSubmit.addEventListener('click', () => {
+    const val = dedicationInput.value.trim();
+    if (!val) {
+      showToast('⚠️ Please type a message first');
+      return;
+    }
+    audio.playChime(784);
+    const item = document.createElement('div');
+    item.className = 'sheet-item';
+    item.innerHTML = `
+      <div class="sheet-item-author">♥ A Message of Admiration</div>
+      <div class="sheet-item-text">"${val}"</div>
+    `;
+    sheetList.prepend(item);
+    dedicationInput.value = '';
+    showToast('✨ Note posted to guestbook!');
+  });
+
+  // High-Resolution 9:16 Mobile Card Download in English
+  document.getElementById('btn-save-img').addEventListener('click', () => {
+    audio.playChime(784);
+    showToast('⏳ Generating luxury mobile wallpaper...');
+
+    const canvas = document.createElement('canvas');
+    canvas.width = 1080;
+    canvas.height = 1920;
+    const ctx = canvas.getContext('2d');
+
+    // Background Velvet Gradient
+    const bgGrad = ctx.createLinearGradient(0, 0, 0, 1920);
+    bgGrad.addColorStop(0, '#220818');
+    bgGrad.addColorStop(0.5, '#10040d');
+    bgGrad.addColorStop(1, '#050104');
+    ctx.fillStyle = bgGrad;
+    ctx.fillRect(0, 0, 1080, 1920);
+
+    // Outer Border
+    ctx.strokeStyle = '#ff2d60';
+    ctx.lineWidth = 10;
+    ctx.strokeRect(40, 40, 1000, 1840);
+
+    // Inner Border
+    ctx.strokeStyle = 'rgba(255, 133, 161, 0.4)';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(55, 55, 970, 1810);
+
+    ctx.textAlign = 'center';
+
+    // Heart Icon at top
+    ctx.fillStyle = '#ff2d60';
+    drawHeartPath(ctx, 540, 160, 60);
+    ctx.fill();
+
+    // Occasion Header
+    ctx.fillStyle = '#ffd4e5';
+    ctx.font = 'bold 36px "Plus Jakarta Sans", sans-serif';
+    ctx.fillText('✦ WORLD TEACHERS\' DAY TRIBUTE ✦', 540, 290);
+
+    // Main Title
+    ctx.font = 'bold 64px "Cinzel", serif';
+    ctx.fillStyle = '#ffffff';
+    ctx.fillText('Tribute of Eternal Gratitude', 540, 420);
+
+    // Teacher Box
+    ctx.fillStyle = '#200a18';
+    ctx.fillRect(140, 520, 800, 370);
+    ctx.strokeStyle = '#ff4b78';
+    ctx.lineWidth = 4;
+    ctx.strokeRect(140, 520, 800, 370);
+
+    ctx.fillStyle = '#ffbe98';
+    ctx.font = 'bold 28px "Plus Jakarta Sans", sans-serif';
+    ctx.fillText('HONORING OUR EXTRAORDINARY EDUCATOR', 540, 605);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 76px "Playfair Display", serif';
+    ctx.fillText('Mrs. Abeer Ayoub', 540, 715);
+
+    ctx.fillStyle = '#ffd4e5';
+    ctx.font = '30px "Plus Jakarta Sans", sans-serif';
+    ctx.fillText('A Beacon of Wisdom • Touching Hearts & Minds', 540, 810);
+
+    // Message Body
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '36px "Playfair Display", serif';
+    ctx.fillText('To the educator who illuminated our path', 540, 1030);
+    ctx.fillText('with endless patience, warmth, and knowledge.', 540, 1090);
+    ctx.fillText('Thank you for inspiring us to achieve greatness.', 540, 1150);
+
+    // Quote Box
+    ctx.fillStyle = '#11030b';
+    ctx.fillRect(160, 1270, 760, 150);
+    ctx.strokeStyle = '#ff2d60';
+    ctx.lineWidth = 3;
+    ctx.strokeRect(160, 1270, 760, 150);
+
+    ctx.fillStyle = '#ffd4e5';
+    ctx.font = 'italic 34px "Playfair Display", serif';
+    ctx.fillText('« A teacher touches a heart and changes a life forever. »', 540, 1360);
+
+    // Signatures
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.75)';
+    ctx.font = '28px "Plus Jakarta Sans", sans-serif';
+    ctx.fillText('Presented by Student: Ghalib Al-Jazi 💖', 540, 1630);
+
+    ctx.fillStyle = '#ff6584';
+    ctx.font = 'bold 26px "Plus Jakarta Sans", sans-serif';
+    ctx.fillText('Certified Medal of Honor ✦ 2026', 540, 1690);
+
+    setTimeout(() => {
+      const a = document.createElement('a');
+      a.download = 'Teacher_Abeer_Ayoub_Tribute_Card.png';
+      a.href = canvas.toDataURL('image/png');
+      a.click();
+      showToast('✅ Mobile wallpaper downloaded!');
+    }, 300);
+  });
+
+  // Toast Function
+  const mobileToast = document.getElementById('mobile-toast');
+  const toastText = document.getElementById('toast-text');
+  function showToast(msg) {
+    toastText.innerText = msg;
+    mobileToast.classList.add('show');
+    setTimeout(() => mobileToast.classList.remove('show'), 2200);
+  }
+
+})();
+</script>
+</body>
+</html>
